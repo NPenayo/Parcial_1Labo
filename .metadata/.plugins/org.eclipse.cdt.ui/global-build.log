@@ -10,3 +10,1202 @@ Invoking: GCC C Linker
 gcc  -o "parcial"  ./src/parcial.o   
 Finished building target: parcial
  
+18:44:48 **** Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+18:46:26 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/arrays.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/arrays.d" -MT"src/arrays.o" -o "src/arrays.o" "../src/arrays.c"
+Finished building: ../src/arrays.c
+ 
+Building file: ../src/degree.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/degree.d" -MT"src/degree.o" -o "src/degree.o" "../src/degree.c"
+Finished building: ../src/degree.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:1:2: error: expected ‘;’ before ‘typedef’
+ g/*
+  ^
+  ;
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:46:32 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building file: ../src/student.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.c"
+Finished building: ../src/student.c
+ 
+Building file: ../src/validations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validations.d" -MT"src/validations.o" -o "src/validations.o" "../src/validations.c"
+Finished building: ../src/validations.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/arrays.o ./src/degree.o ./src/menu.o ./src/parcial1_labo.o ./src/student.o ./src/validations.o   
+Finished building target: parcial1_labo
+ 
+18:50:56 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Arrays.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arrays.d" -MT"src/Arrays.o" -o "src/Arrays.o" "../src/Arrays.c"
+Finished building: ../src/Arrays.c
+ 
+Building file: ../src/Degree.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Degree.d" -MT"src/Degree.o" -o "src/Degree.o" "../src/Degree.c"
+Finished building: ../src/Degree.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/Validations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Validations.d" -MT"src/Validations.o" -o "src/Validations.o" "../src/Validations.c"
+Finished building: ../src/Validations.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Degree.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+18:51:42 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Arrays.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arrays.d" -MT"src/Arrays.o" -o "src/Arrays.o" "../src/Arrays.c"
+Finished building: ../src/Arrays.c
+ 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/Validations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Validations.d" -MT"src/Validations.o" -o "src/Validations.o" "../src/Validations.c"
+Finished building: ../src/Validations.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+18:52:29 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:25:11: error: unknown type name ‘Degree’
+ int getId(Degree *degrees, int arrLength, char *description, int *output);
+           ^~~~~~
+../src/Income.h:37:20: error: unknown type name ‘Degree’
+ int getDescription(Degree *degrees, int arrLength, int id, char *output);
+                    ^~~~~~
+../src/Income.h:45:19: error: unknown type name ‘Degree’
+ void indexDegrees(Degree *degrees, int arrLength);
+                   ^~~~~~
+../src/Income.h:52:17: error: unknown type name ‘Degree’
+ void showDegree(Degree degree);
+                 ^~~~~~
+../src/Income.h:63:17: error: unknown type name ‘Degree’
+ int validDegree(Degree *degrees, int arrLength, int *output, int max_attemps);
+                 ^~~~~~
+../src/Income.c: In function ‘indexDegrees’:
+../src/Income.c:43:3: warning: implicit declaration of function ‘showDegree’; did you mean ‘indexDegrees’? [-Wimplicit-function-declaration]
+   showDegree(degrees[i]);
+   ^~~~~~~~~~
+   indexDegrees
+../src/Income.c: At top level:
+../src/Income.c:48:6: warning: conflicting types for ‘showDegree’
+ void showDegree(Income degree) {
+      ^~~~~~~~~~
+../src/Income.c:43:3: note: previous implicit declaration of ‘showDegree’ was here
+   showDegree(degrees[i]);
+   ^~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:53:18 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘indexDegrees’:
+../src/Income.c:43:3: warning: implicit declaration of function ‘showDegree’; did you mean ‘showincome’? [-Wimplicit-function-declaration]
+   showDegree(degrees[i]);
+   ^~~~~~~~~~
+   showincome
+../src/Income.c: At top level:
+../src/Income.c:48:6: warning: conflicting types for ‘showDegree’
+ void showDegree(Income degree) {
+      ^~~~~~~~~~
+../src/Income.c:43:3: note: previous implicit declaration of ‘showDegree’ was here
+   showDegree(degrees[i]);
+   ^~~~~~~~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createStudent’:
+../src/Taxpayer.c:45:7: warning: implicit declaration of function ‘validDegree’; did you mean ‘validChar’? [-Wimplicit-function-declaration]
+    && validDegree(dgarr, dgArrLength, &id_degree, MAX_ATTEMPTS)) {
+       ^~~~~~~~~~~
+       validChar
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+18:53:32 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/Taxpayer.o: in function `createStudent':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/Taxpayer.c:45: undefined reference to `validDegree'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:54:48 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createStudent’:
+../src/Taxpayer.c:45:7: warning: implicit declaration of function ‘validDegree’; did you mean ‘validChar’? [-Wimplicit-function-declaration]
+    && validDegree(incomes, incomesLength, &id_degree, MAX_ATTEMPTS)) {
+       ^~~~~~~~~~~
+       validChar
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/Taxpayer.o: in function `createStudent':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/Taxpayer.c:45: undefined reference to `validDegree'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:55:26 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+18:55:29 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+18:56:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createStudent’:
+../src/Taxpayer.c:48:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   newStudent.docket = docket;
+             ^
+../src/Taxpayer.c:55:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘gender’
+   newStudent.gender = gender;
+             ^
+../src/Taxpayer.c: In function ‘showStudent’:
+../src/Taxpayer.c:85:12: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+     student.docket, student.surname, student.age, student.gender,
+            ^
+../src/Taxpayer.c:85:58: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘gender’
+     student.docket, student.surname, student.age, student.gender,
+                                                          ^
+../src/Taxpayer.c: In function ‘updateStudent’:
+../src/Taxpayer.c:94:18: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                  ^
+../src/Taxpayer.c:94:36: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                                    ^
+../src/Taxpayer.c: In function ‘deleteStudent’:
+../src/Taxpayer.c:105:18: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                  ^
+../src/Taxpayer.c:105:36: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                                    ^
+../src/Taxpayer.c: In function ‘getStudentByDocket’:
+../src/Taxpayer.c:118:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (arr[i].docket == to_find && arr[i].assigned) {
+             ^
+../src/Taxpayer.c: In function ‘orderBy’:
+../src/Taxpayer.c:167:33: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+     appendIntToArray(students[i].docket, auxInt, i);
+                                 ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:57:05 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createStudent’:
+../src/Taxpayer.c:48:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   newStudent.docket = docket;
+             ^
+../src/Taxpayer.c:51:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score1’
+   newStudent.score1 = score1;
+             ^
+../src/Taxpayer.c:52:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score2’
+   newStudent.score2 = score2;
+             ^
+../src/Taxpayer.c:53:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘scoreAvg’
+   newStudent.scoreAvg = (float) (newStudent.score1 + newStudent.score2)
+             ^
+../src/Taxpayer.c:53:44: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score1’
+   newStudent.scoreAvg = (float) (newStudent.score1 + newStudent.score2)
+                                            ^
+../src/Taxpayer.c:53:64: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score2’
+   newStudent.scoreAvg = (float) (newStudent.score1 + newStudent.score2)
+                                                                ^
+../src/Taxpayer.c:55:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘gender’
+   newStudent.gender = gender;
+             ^
+../src/Taxpayer.c:56:14: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘age’; did you mean ‘name’?
+   newStudent.age = age;
+              ^~~
+              name
+../src/Taxpayer.c:57:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘id_degree’
+   newStudent.id_degree = id_degree;
+             ^
+../src/Taxpayer.c: In function ‘showStudent’:
+../src/Taxpayer.c:81:48: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘id_degree’
+  getDescription(incomes, incomesLength, student.id_degree, degDescription);
+                                                ^
+../src/Taxpayer.c:85:12: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+     student.docket, student.surname, student.age, student.gender,
+            ^
+../src/Taxpayer.c:85:46: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘age’; did you mean ‘name’?
+     student.docket, student.surname, student.age, student.gender,
+                                              ^~~
+                                              name
+../src/Taxpayer.c:85:58: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘gender’
+     student.docket, student.surname, student.age, student.gender,
+                                                          ^
+../src/Taxpayer.c:86:12: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score1’
+     student.score1, student.score2, student.scoreAvg,
+            ^
+../src/Taxpayer.c:86:28: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘score2’
+     student.score1, student.score2, student.scoreAvg,
+                            ^
+../src/Taxpayer.c:86:44: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘scoreAvg’
+     student.score1, student.score2, student.scoreAvg,
+                                            ^
+../src/Taxpayer.c: In function ‘updateStudent’:
+../src/Taxpayer.c:94:18: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                  ^
+../src/Taxpayer.c:94:36: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                                    ^
+../src/Taxpayer.c: In function ‘deleteStudent’:
+../src/Taxpayer.c:105:18: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                  ^
+../src/Taxpayer.c:105:36: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (students[i].docket == student.docket) {
+                                    ^
+../src/Taxpayer.c: In function ‘getStudentByDocket’:
+../src/Taxpayer.c:118:13: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+   if (arr[i].docket == to_find && arr[i].assigned) {
+             ^
+../src/Taxpayer.c: In function ‘orderBy’:
+../src/Taxpayer.c:167:33: error: ‘TaxPayer’ {aka ‘struct <anonymous>’} has no member named ‘docket’
+     appendIntToArray(students[i].docket, auxInt, i);
+                                 ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:07:15 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:09:49 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:10:16 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:13:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:13:06 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:16:52 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Arrays.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arrays.d" -MT"src/Arrays.o" -o "src/Arrays.o" "../src/Arrays.c"
+Finished building: ../src/Arrays.c
+ 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:17:25 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:21:40 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:22:21 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:24:55 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:26:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:27:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:27:45 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:39 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:23 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:43 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:38 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:52 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:25 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:23 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:38 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:02 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:44 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:48 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:01 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:42:35 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:45:18 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:47:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:49:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:43 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:24 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:49 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:52:23 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:02 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

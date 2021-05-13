@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name        : parcial1_labo.c
+ Author      : Nicolas Alejandro Penayo 1 E
+ Description : Parcial 1 Laboratorio
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "Arrays.h"
+#include "Menu.h"
+#include "Validations.h"
+#define MAIN_OPT 9
+#define UPD_OPT 4
+int main(void) {
+	int id = 1000;
+	Option mainMenu[MAIN_OPT];
+	Option updMenut[UPD_OPT];
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,52 @@
+/*
+ * Taxpayer.h
+ *
+ *  Created on: 29 Apr 2021
+ *      Author: Nicolas Alejandro Penayo
+ *      Description: Struct Taxpayer y funciones relacionadas
+ */
+
+#ifndef TAXPAYER_H_
+#define TAXPAYER_H_
+#include "Income.h"
+#define STR_LEN 20
+typedef struct {
+	int id;
+	char name[STR_LEN];
+	char surname[STR_LEN];
+	int cuil;
+	int assigned;
+} TaxPayer;
+
+//CRUD alumnos
+/**
+ * @brief Create a new taxpayer
+ * @pre
+ * @post
+ * @param arr TaxPayer*
+ * @param stArrLength
+ * @param index
+ * @param dgarr
+ * @param dgArrLength
+ * @return
+ */
+int createTaxpayer(TaxPayer arr[], int stArrLength, int index, Income dgarr[],
+		int dgArrLength);
+void indexTaxpayers(TaxPayer arr[], int arrLength, Income dgarr[],
+		int dgArrLength);
+void showTaxpayer(TaxPayer Taxpayer, Income dgarr[], int dgArrLength);
+int updateTaxpayer(TaxPayer Taxpayer, TaxPayer *Taxpayers, int arrLength);
+int deleteTaxpayer(TaxPayer Taxpayer, TaxPayer *Taxpayers, int arrLength);
+//Obtener alumno por id
+int getTaxpayerByDocket(TaxPayer arr[], int arrLength, int to_find,
+		Income dgarr[], int dgArrLength, TaxPayer *output);
+//Inicializar array de alumnos
+void initializeTaxpayers(TaxPayer Taxpayers[], int arrLength);
+//Obtener posicion libre en array de alumnos
+int getUnassigned(TaxPayer Taxpayers[], int arrLength, int *to_assign);
+//Verificar si hay registros cargados
+int isEmpty(TaxPayer Taxpayers[], int arrLength);
+
+void orderBy(TaxPayer *Taxpayers,int stArrLength,Income *degrees,int dgArrLength,char arg,char mode);
+void swapTaxpayer(TaxPayer *Taxpayers,int a,int b);
+#endif /* TAXPAYER_H_ */

@@ -1,0 +1,15 @@
+/*
+ ============================================================================
+ Name        : parcial1_labo.c
+ Author      : Nicolas Alejandro Penayo 1 E
+ Description : Parcial 1 Laboratorio
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}

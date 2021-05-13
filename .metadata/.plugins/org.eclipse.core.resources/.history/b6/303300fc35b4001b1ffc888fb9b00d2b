@@ -1,0 +1,45 @@
+/*
+ * student.h
+ *
+ *  Created on: 29 Apr 2021
+ *      Author: Nicolas Alejandro Penayo
+ *      Description: Struct Student y funciones relacionadas
+ */
+
+#ifndef TAXPAYER_H_
+#define TAXPAYER_H_
+#include "Income.h"
+#define AMOUNT 20
+typedef struct {
+	int docket;
+	char gender;
+	int age;
+	int score1;
+	int score2;
+	float scoreAvg;
+	char surname[AMOUNT];
+	int assigned;
+	int id_degree;
+} TaxPayer;
+
+//CRUD alumnos
+int createStudent(TaxPayer arr[], int stArrLength, int index, Income dgarr[],
+		int dgArrLength);
+void indexStudents(TaxPayer arr[], int arrLength, Income dgarr[],
+		int dgArrLength);
+void showStudent(TaxPayer student, Income dgarr[], int dgArrLength);
+int updateStudent(TaxPayer student, TaxPayer *students, int arrLength);
+int deleteStudent(TaxPayer student, TaxPayer *students, int arrLength);
+//Obtener alumno por id
+int getStudentByDocket(TaxPayer arr[], int arrLength, int to_find,
+		Income dgarr[], int dgArrLength, TaxPayer *output);
+//Inicializar array de alumnos
+void initializeStudents(TaxPayer students[], int arrLength);
+//Obtener posicion libre en array de alumnos
+int getUnassigned(TaxPayer students[], int arrLength, int *to_assign);
+//Verificar si hay registros cargados
+int isEmpty(TaxPayer students[], int arrLength);
+
+void orderBy(TaxPayer *students,int stArrLength,Income *degrees,int dgArrLength,char arg,char mode);
+void swapStudent(TaxPayer *students,int a,int b);
+#endif /* TAXPAYER_H_ */
