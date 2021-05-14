@@ -77,7 +77,36 @@ int validInt(char *requestMsg, char *errorMsg, int *output, int min_value,
 	}
 	return resp;
 }
-
+int validLongInt(char *requestMsg, char *errorMsg, long int *output, long int min_value,
+		long int max_value, int max_attempts) {
+	long int aux;
+	int resp = 0;
+	int isLong;
+	int valid = 0;
+	int attempts = 0;
+	do {
+		printf("\n%s ", requestMsg);
+		__fpurge(stdin);
+		isLong = scanf("%ld", &aux);
+		if (isLong && (aux >= min_value && aux <= max_value)) {
+			valid = 1;
+			resp = 1;
+			*output = aux;
+			break;
+		} else {
+			printf("\n%s ", errorMsg);
+		}
+		attempts++;
+	} while (!valid && attempts < max_attempts);
+	if (attempts == max_attempts) {
+		system("clear");
+		printf(
+				"\nCantidad de intentos superada. Presione una tecla para volver al menu");
+		__fpurge(stdin);
+		getchar();
+	}
+	return resp;
+}
 int validFloat(char *requestMsg, char *errorMsg, float *output, float min_value,
 		float max_value, int max_attempts) {
 	float aux;

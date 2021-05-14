@@ -1,0 +1,223 @@
+/*
+ ============================================================================
+ Name        : parcial1_labo.c
+ Author      : Nicolas Alejandro Penayo 1 E
+ Description : Parcial 1 Laboratorio
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+#include "Arrays.h"
+#include "Menu.h"
+#include "Validations.h"
+#include "Taxpayer.h"
+#define MAIN_OPT 9
+#define UPD_OPT 4
+#define MAX_ATTEMPTS 3
+#define TP_AMOUNT 3
+void clearConsole();
+void cleanBuffer();
+int main(void) {
+	//Set variables
+	int id = 1000;
+	char opt;
+	char valid_confirm[2] = { 's', 'n' };
+	Option mainMenu[MAIN_OPT];
+	Option updMenut[UPD_OPT];
+	int auxIndex;
+	int auxId;
+	char auxName[20];
+	char auxSurname[20];
+	int auxCUIT;
+	TaxPayer tpList[TP_AMOUNT];
+	initializeTaxpayers(tpList, TP_AMOUNT);
+	//Set options
+
+	//Main Menu
+	setOption('1', "Alta de contribuyente", mainMenu, 0);
+	setOption('2', "Modificar datos contribuyente", mainMenu, 1);
+	setOption('3', "Baja de contribuyente", mainMenu, 2);
+	setOption('4', "Recaudacion", mainMenu, 3);
+	setOption('5', "Refinanciar Recaudacion", mainMenu, 4);
+	setOption('6', "Saldar Recaudacion", mainMenu, 5);
+	setOption('7', "Imprimir Contribuyentes", mainMenu, 6);
+	setOption('8', "Imprimir Recaudacion", mainMenu, 7);
+	setOption('x', "Salir", mainMenu, 8);
+
+	//Update Menu
+	setOption('a', "Nombre", updMenut, 0);
+	setOption('b', "Apellido", updMenut, 1);
+	setOption('c', "CUIL", updMenut, 2);
+	setOption('x', "Recaudacion", updMenut, 3);
+
+	do {
+		printMenu(mainMenu, MAIN_OPT);
+		printf("\nElija una opcion: ");
+		cleanBuffer();
+		scanf("%c", &opt);
+		if (getOption(opt, mainMenu, MAIN_OPT)) {
+			clearConsole();
+			switch (opt) {
+			case '1':
+				if (getUnassigned(tpList, TP_AMOUNT, &auxIndex)) {
+					do {
+						if (!(opt == 'n')
+								&& createTaxpayer(tpList, TP_AMOUNT, &id,
+										auxIndex)) {
+
+							printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
+									"Nombre", "Apellido", "CUIL");
+							showTaxPayer(tpList[auxIndex]);
+
+							printf(
+									"\n\nCarga exitosa. Desea cargar otro contribuyente?(s/n) ");
+							cleanBuffer();
+							scanf("%c", &opt);
+							if (opt == 'n') {
+								break;
+							}
+						} else {
+							printf(
+									"Error. Algo salio mal en la carga de datos, intente nuevamente.");
+							printf("\nPresione una tecla para volver al menu");
+							cleanBuffer();
+							getchar();
+						}
+
+					} while (!(opt == 'n'));
+					if (createTaxpayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+
+						printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
+								"Nombre", "Apellido", "CUIL");
+						showTaxPayer(tpList[auxIndex]);
+						printf("Carga exitosa");
+						printf("\nPresione una tecla para volver al menu");
+						cleanBuffer();
+						getchar();
+					} else {
+						printf(
+								"Error. Algo salio mal en la carga de datos, intente nuevamente.");
+						printf("\nPresione una tecla para volver al menu");
+						cleanBuffer();
+						getchar();
+					}
+				} else {
+					clearConsole();
+					printf(
+							"\nError.La base de contribuyentes esta llena. Debe borrar un registro.");
+					printf("\nPresione una tecla para volver al menu");
+					cleanBuffer();
+					getchar();
+				}
+
+				break;
+			case '2':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
+					do {
+						indexTaxpayers(tpList, TP_AMOUNT);
+						if (validInt("Ingrese el ID",
+								"ID incorrecto. Intente nuevamente", &auxId,
+								1000, id, MAX_ATTEMPTS)) {
+							clearConsole();
+							printMenu(updMenut, UPD_OPT);
+							printf("\nElija una opcion: ");
+							cleanBuffer();
+							scanf("%c", &opt);
+							switch (opt) {
+							case 'a':
+								clearConsole();
+								if(validString("Nuevo Nombre",
+										"Error.El nombre no puede estar vacio o contener numeros", auxName, 20,
+										MAX_ATTEMPTS)){
+
+								}
+
+											&& )
+											&& validLongInt("CUIL(sin - )", "Error.Tipo de dato ingresado invalido",
+													&cuil, 20000000000, 40000000000,
+													MAX_ATTEMPTS)
+								break;
+							case 'b':
+								clearConsole();
+								if(validString("Apellido",
+										"Error.El apellido no puede estar vacio o contener numeros",
+										auxSurname, 20, MAX_ATTEMPTS){
+
+								}
+								break;
+							case 'c':
+
+								break;
+							case 'd':
+
+								break;
+							}
+						} else {
+							break;
+						}
+					} while (!(opt == 'x' || opt == 'n'));
+				} else {
+					clearConsole();
+					printf("\nNo hay contribuyentes cargados para mostrar.");
+				}
+				break;
+			case '3':
+
+				break;
+			case '4':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
+
+				} else {
+					clearConsole();
+					printf(
+							"\nNo hay contribuyentes cargados para asignarles una recaudacion.");
+				}
+				break;
+			case '5':
+
+				break;
+			case '6':
+
+				break;
+			case '7':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
+
+				} else {
+					clearConsole();
+					printf("\nNo hay recaudaciones cargadas para mostrar.");
+				}
+				break;
+			case '8':
+
+				break;
+			default:
+				break;
+			}
+		} else {
+			clearConsole();
+			printf("\nError.Opcion invalida");
+			printf("\nPresione una tecla para volver al menu");
+			cleanBuffer();
+			getchar();
+		}
+	} while (!(opt == 'x'));
+
+	return EXIT_SUCCESS;
+}
+void clearConsole() {
+#if defined( __linux__)
+	system("clear");
+#elif defined( __MINGW32__)
+	sytem("cls");
+#endif
+}
+void cleanBuffer() {
+#if defined(__linux__)
+	__fpurge(stdin);
+#elif defined(__MINGW32__)
+	fflush(stdin);
+#endif
+}
+

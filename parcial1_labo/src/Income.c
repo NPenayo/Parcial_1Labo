@@ -11,7 +11,7 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 
-int getId(Income *incomes, int arrLength, char *description, int *output) {
+/*int getId(Income *incomes, int arrLength, char *description, int *output) {
 	int resp = 0;
 	for (int i = 0; i < arrLength; i++) {
 		if (!(strcmp(incomes[i].description, description))) {
@@ -82,4 +82,4 @@ int validincome(Income *incomes, int arrLength, int *output, int max_attempts) {
 	}
 	return resp;
 
-}
+}*/

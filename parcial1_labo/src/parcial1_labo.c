@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio_ext.h>
 #include "Arrays.h"
 #include "Menu.h"
 #include "Validations.h"
@@ -25,11 +26,13 @@ int main(void) {
 	Option mainMenu[MAIN_OPT];
 	Option updMenut[UPD_OPT];
 	int auxIndex;
+	int auxId;
 	char auxName[20];
 	char auxSurname[20];
-	int auxCUIT;
+	long int auxCUIL;
 	TaxPayer tpList[TP_AMOUNT];
-	initializeTaxpayers(tpList, TP_AMOUNT)
+	TaxPayer auxTP;
+	initializeTaxpayers(tpList, TP_AMOUNT);
 	//Set options
 
 	//Main Menu
@@ -51,6 +54,7 @@ int main(void) {
 
 	do {
 		printMenu(mainMenu, MAIN_OPT);
+		printf("\nElija una opcion: ");
 		cleanBuffer();
 		scanf("%c", &opt);
 		if (getOption(opt, mainMenu, MAIN_OPT)) {
@@ -58,11 +62,40 @@ int main(void) {
 			switch (opt) {
 			case '1':
 				if (getUnassigned(tpList, TP_AMOUNT, &auxIndex)) {
+					do {
+						if (!(opt == 'n')
+								&& createTaxpayer(tpList, TP_AMOUNT, &id,
+										auxIndex)) {
 
-					if (createTaxPayer(tpList, TP_AMOUNT, &id)) {
-						printf("Carga exitosa");
-						printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
+							printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
 									"Nombre", "Apellido", "CUIL");
+							showTaxPayer(tpList[auxIndex]);
+
+							printf(
+									"\n\nCarga exitosa. Desea cargar otro contribuyente?(s/n) ");
+							cleanBuffer();
+							scanf("%c", &opt);
+							if (opt == 'n') {
+								break;
+							}
+						} else {
+							printf(
+									"Error. Algo salio mal en la carga de datos, intente nuevamente.");
+							printf("\nPresione una tecla para volver al menu");
+							cleanBuffer();
+							getchar();
+						}
+
+					} while (!(opt == 'n'));
+					if (createTaxpayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+
+						printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
+								"Nombre", "Apellido", "CUIL");
+						showTaxPayer(tpList[auxIndex]);
+						printf("Carga exitosa");
+						printf("\nPresione una tecla para volver al menu");
+						cleanBuffer();
+						getchar();
 					} else {
 						printf(
 								"Error. Algo salio mal en la carga de datos, intente nuevamente.");
@@ -81,13 +114,88 @@ int main(void) {
 
 				break;
 			case '2':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
+					do {
+						indexTaxpayers(tpList, TP_AMOUNT);
+						if (validInt("Ingrese el ID",
+								"ID incorrecto. Intente nuevamente", &auxId,
+								1000, id, MAX_ATTEMPTS)) {
+							clearConsole();
+							printMenu(updMenut, UPD_OPT);
+							printf("\nElija una opcion: ");
+							cleanBuffer();
+							scanf("%c", &opt);
+							switch (opt) {
+							case 'a':
+								clearConsole();
+								if (validString("Nuevo nombre",
+										"Error.El nombre no puede estar vacio o contener numeros",
+										auxName, 20,
+										MAX_ATTEMPTS)) {
+									if (getTaxPayerById(tpList, TP_AMOUNT,
+											auxId, &auxIndex)) {
+										strcpy(tpList[auxIndex].name, auxName);
+										clearConsole();
+										printf(
+												"\n Se nombre el nombre con exito");
+									}
 
+								}
+								break;
+							case 'b':
+								clearConsole();
+								if (validString("Nuevo apellido",
+										"Error.El apellido no puede estar vacio o contener numeros",
+										auxSurname, 20, MAX_ATTEMPTS)) {
+									if (getTaxPayerById(tpList, TP_AMOUNT,
+											auxId, &auxIndex)) {
+										strcpy(tpList[auxIndex].surname,
+												auxSurname);
+										clearConsole();
+										printf(
+												"\n Se nombre el apellido con exito");
+									}
+
+								}
+								break;
+							case 'c':
+								clearConsole();
+								if (validLongInt("CUIL(sin - )",
+										"Error.Tipo de dato ingresado invalido",
+										&auxCUIL, 20000000000, 40000000000,
+										MAX_ATTEMPTS)) {
+									if (getTaxPayerById(tpList, TP_AMOUNT,
+											auxId, &auxIndex)) {
+										tpList[auxIndex].cuil = auxCUIL;
+										clearConsole();
+										printf(
+												"\n Se modifico el CUIL con exito");
+									}
+
+								}
+								break;
+							}
+							printf("\nDesea modificar otro dato? (s/n): ");
+							cleanBuffer();
+							scanf("%c", &opt);
+						}
+					} while (!(opt == 'x' || opt == 'n'));
+				} else {
+					clearConsole();
+					printf("\nNo hay contribuyentes cargados para mostrar.");
+				}
 				break;
 			case '3':
 
 				break;
 			case '4':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
 
+				} else {
+					clearConsole();
+					printf(
+							"\nNo hay contribuyentes cargados para asignarles una recaudacion.");
+				}
 				break;
 			case '5':
 
@@ -96,7 +204,12 @@ int main(void) {
 
 				break;
 			case '7':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
 
+				} else {
+					clearConsole();
+					printf("\nNo hay recaudaciones cargadas para mostrar.");
+				}
 				break;
 			case '8':
 

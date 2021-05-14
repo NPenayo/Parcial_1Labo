@@ -1,22 +1,6 @@
-19:54:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+20:55:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
 make all 
-Building file: ../src/Income.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
-../src/Income.c: In function ‘getId’:
-../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
-   if (!(strcmp(incomes[i].description, description))) {
-                          ^
-../src/Income.c: In function ‘getDescription’:
-../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
-    strcpy(output, incomes[i].description);
-                             ^
-../src/Income.c: In function ‘showincome’:
-../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
-  printf("\n %6d%10s %-20s", income.id,"",income.description);
-                                                ^
-make: *** [src/subdir.mk:35: src/Income.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
+make: Nothing to be done for 'all'.
 
-19:54:14 Build Failed. 4 errors, 0 warnings. (took 388ms)
+20:55:14 Build Finished. 0 errors, 0 warnings. (took 393ms)
 

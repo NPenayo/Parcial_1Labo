@@ -35,6 +35,9 @@ int validChar(char* requestMsg, char* errorMsg, char *output,
  */
 int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
 		int max_value, int max_attempts);
+
+int validLongInt(char *requestMsg, char *errorMsg, long int *output, long int min_value,
+		long int max_value, int max_attempts);
 /**
  * @fn int validFloat(char[], char[], float*, float, float, int)
  * @brief Valida que el dato ingresado sea un float

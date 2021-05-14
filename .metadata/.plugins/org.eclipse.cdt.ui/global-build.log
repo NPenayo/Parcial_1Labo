@@ -1209,3 +1209,2321 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Incom
                                                 ^
 make: *** [src/subdir.mk:35: src/Income.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+19:56:38 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:06 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:30 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:58:24 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:19:1: warning: "/*" within comment [-Wcomment]
+ /**
+  
+../src/Income.c: In function ‘getId’:
+../src/Income.c:17:26: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+   if (!(strcmp(incomes[i].description, description))) {
+                          ^
+../src/Income.c: In function ‘getDescription’:
+../src/Income.c:30:29: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+    strcpy(output, incomes[i].description);
+                             ^
+../src/Income.c: In function ‘indexincomes’:
+../src/Income.c:43:3: warning: implicit declaration of function ‘showincome’; did you mean ‘indexincomes’? [-Wimplicit-function-declaration]
+   showincome(incomes[i]);
+   ^~~~~~~~~~
+   indexincomes
+../src/Income.c: At top level:
+../src/Income.c:48:6: warning: conflicting types for ‘showincome’
+ void showincome(Income income) {
+      ^~~~~~~~~~
+../src/Income.c:43:3: note: previous implicit declaration of ‘showincome’ was here
+   showincome(incomes[i]);
+   ^~~~~~~~~~
+../src/Income.c: In function ‘showincome’:
+../src/Income.c:49:48: error: ‘Income’ {aka ‘struct <anonymous>’} has no member named ‘description’
+  printf("\n %6d%10s %-20s", income.id,"",income.description);
+                                                ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:58:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:19:1: warning: "/*" within comment [-Wcomment]
+ /**
+  
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:41:3: error: unknown type name ‘Income’
+   Income icList, int icLens, TaxPayer *output);
+   ^~~~~~
+../src/Taxpayer.h:49:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:59:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:41:3: error: unknown type name ‘Income’
+   Income icList, int icLens, TaxPayer *output);
+   ^~~~~~
+../src/Taxpayer.h:49:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c:62:37: error: expected declaration specifiers or ‘...’ before ‘)’ token
+ void showTaxPayer(TaxPayer taxPayer,) {
+                                     ^
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:113:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:135:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:141:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:141:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:141:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c:62:37: error: expected declaration specifiers or ‘...’ before ‘)’ token
+ void showTaxPayer(TaxPayer taxPayer,) {
+                                     ^
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:113:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:135:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:141:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:141:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:141:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:26 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:65:32: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘char *’ [-Wformat=]
+   printf("\n | %6d | %-10s | %4d | %4c ", taxPayer.id, taxPayer.name,
+                              ~~^
+                              %4s
+     taxPayer.surname, taxPayer.cuil);
+     ~~~~~~~~~~~~~~~~            
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:40 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:65:32: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘char *’ [-Wformat=]
+   printf("\n | %6d | %-10s | %4d | %4d ", taxPayer.id, taxPayer.name,
+                              ~~^
+                              %4s
+     taxPayer.surname, taxPayer.cuil);
+     ~~~~~~~~~~~~~~~~            
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:46 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:55 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:01:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:36:38: error: unknown type name ‘Income’
+ void showTaxpayer(TaxPayer taxpayer, Income icList, int icLens);
+                                      ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:01:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:50:61: error: unknown type name ‘Income’
+ void indexTaxPayer(TaxPayer TaxPayer[], int TaxPayerLength, Income incomes[],
+                                                             ^~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:112:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:134:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:140:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:140:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:140:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:01:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: In function ‘indexTaxPayer’:
+../src/Taxpayer.c:58:3: warning: implicit declaration of function ‘showTaxPayer’; did you mean ‘showTaxpayer’? [-Wimplicit-function-declaration]
+   showTaxPayer(tpList[i]);
+   ^~~~~~~~~~~~
+   showTaxpayer
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:61:6: warning: conflicting types for ‘showTaxPayer’
+ void showTaxPayer(TaxPayer taxPayer) {
+      ^~~~~~~~~~~~
+../src/Taxpayer.c:58:3: note: previous implicit declaration of ‘showTaxPayer’ was here
+   showTaxPayer(tpList[i]);
+   ^~~~~~~~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:111:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:133:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:139:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:139:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:139:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:02:09 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: In function ‘indexTaxPayer’:
+../src/Taxpayer.c:58:3: warning: implicit declaration of function ‘showTaxPayer’; did you mean ‘showTaxpayer’? [-Wimplicit-function-declaration]
+   showTaxPayer(tpList[i]);
+   ^~~~~~~~~~~~
+   showTaxpayer
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:61:6: warning: conflicting types for ‘showTaxPayer’
+ void showTaxPayer(TaxPayer taxPayer) {
+      ^~~~~~~~~~~~
+../src/Taxpayer.c:58:3: note: previous implicit declaration of ‘showTaxPayer’ was here
+   showTaxPayer(tpList[i]);
+   ^~~~~~~~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:111:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:133:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:139:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:139:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:139:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:02:16 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:34:51: error: unknown type name ‘Income’
+ void indexTaxpayers(TaxPayer *tpList, int tpLens, Income icList,
+                                                   ^~~~~~
+../src/Taxpayer.h:48:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:111:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:133:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:139:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:139:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:139:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:02:36 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:47:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: In function ‘getUnassigned’:
+../src/Taxpayer.c:111:20: warning: comparison between pointer and integer
+  for (int i = 0; i < tpList; i++) {
+                    ^
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:133:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:139:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:139:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:139:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:01 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:47:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Taxpayer.c: At top level:
+../src/Taxpayer.c:133:44: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList, int tpLens, Income *icList, int icLens, char arg,
+                                            ^~~~~~
+../src/Taxpayer.c:139:2: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+  ^~
+../src/Taxpayer.c:139:8: error: invalid suffix "d" on integer constant
+ %6d | %6d | %8.2f | %7s
+        ^~
+../src/Taxpayer.c:139:22: error: invalid suffix "s" on integer constant
+ %6d | %6d | %8.2f | %7s
+                      ^~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:20 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+In file included from ../src/Taxpayer.c:14:
+../src/Taxpayer.h:47:42: error: unknown type name ‘Income’
+ void orderBy(TaxPayer *tpList,int tpLens,Income *degrees,int icLens,char arg);
+                                          ^~~~~~
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:25:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:35:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:35:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:44:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c:24:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:48 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:24:2: warning: implicit declaration of function ‘initializeString’; did you mean ‘validString’? [-Wimplicit-function-declaration]
+  initializeString(name, STR_LEN);
+  ^~~~~~~~~~~~~~~~
+  validString
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:04:02 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:24:19: warning: passing argument 1 of ‘initializeString’ from incompatible pointer type [-Wincompatible-pointer-types]
+  initializeString(name, STR_LEN);
+                   ^~~~
+In file included from ../src/Taxpayer.c:13:
+../src/Arrays.h:60:23: note: expected ‘char (*)[20]’ but argument is of type ‘char *’
+ void initializeString(char[][STRING_LENGTH], int);
+                       ^~~~~~~~~~~~~~~~~~~~~
+../src/Taxpayer.c:25:19: warning: passing argument 1 of ‘initializeString’ from incompatible pointer type [-Wincompatible-pointer-types]
+  initializeString(surname, STR_LEN);
+                   ^~~~~~~
+In file included from ../src/Taxpayer.c:13:
+../src/Arrays.h:60:23: note: expected ‘char (*)[20]’ but argument is of type ‘char *’
+ void initializeString(char[][STRING_LENGTH], int);
+                       ^~~~~~~~~~~~~~~~~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:04:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:04:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:05:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:04 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:24 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:44 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 20000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:13: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘20000000000’ to ‘-1474836480’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+             ^~~~~~~~~~~
+../src/Taxpayer.c:34:26: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 20000000000, 40000000000,
+                          ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:07:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:6: warning: passing argument 3 of ‘validInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+      &cuil, 2000000000, 40000000000,
+      ^~~~~
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘long int *’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Taxpayer.c:34:25: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 2000000000, 40000000000,
+                         ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:07:16 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:34:25: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘40000000000’ to ‘1345294336’ [-Woverflow]
+      &cuil, 2000000000, 40000000000,
+                         ^~~~~~~~~~~
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:07:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:08:54 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘validLongInt’:
+../src/Taxpayer.c:19:59: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int createTaxPayer(TaxPayer *tpList, int tpLens, int *id) {
+                                                           ^
+../src/Taxpayer.c:49:50: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ void indexTaxPayer(TaxPayer *tpList, int tpLens) {
+                                                  ^
+../src/Taxpayer.c:60:38: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ void showTaxPayer(TaxPayer taxPayer) {
+                                      ^
+../src/Taxpayer.c:68:69: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int updateTaxPayer(TaxPayer taxPayer, TaxPayer *tpList, int tpLens) {
+                                                                     ^
+../src/Taxpayer.c:79:69: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int deleteTaxPayer(TaxPayer taxpayer, TaxPayer *tpList, int tpLens) {
+                                                                     ^
+../src/Taxpayer.c:91:82: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find, TaxPayer *output) {
+                                                                                  ^
+../src/Taxpayer.c:102:55: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ void initializeTaxPayer(TaxPayer *tpList, int tpLens) {
+                                                       ^
+../src/Taxpayer.c:108:65: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int getUnassigned(TaxPayer *tpList, int tpLens, int *to_assign) {
+                                                                 ^
+../src/Taxpayer.c:119:43: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int isEmpty(TaxPayer *tpList, int tpLens) {
+                                           ^
+In file included from ../src/Taxpayer.c:16:
+../src/Validations.h:39:5: error: old-style parameter declarations in prototyped function definition
+ int validLongInt(char *requestMsg, char *errorMsg, long int *output, long int min_value,
+     ^~~~~~~~~~~~
+../src/Taxpayer.c:190: error: expected ‘{’ at end of input
+  }*/
+ 
+../src/Taxpayer.c:131:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:08:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:09:24 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+../src/Taxpayer.c: In function ‘showTaxPayer’:
+../src/Taxpayer.c:63:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+   printf("\n | %6d | %-10s | %-10s | %10d ", taxPayer.id, taxPayer.name,
+                                      ~~~^
+                                      %10ld
+     taxPayer.surname, taxPayer.cuil);
+                       ~~~~~~~~~~~~~      
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:09:35 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+../src/Taxpayer.c: In function ‘createTaxPayer’:
+../src/Taxpayer.c:43:9: error: array subscript is not an integer
+   tpList[index] = newTaxPayer;
+         ^
+make: *** [src/subdir.mk:35: src/Taxpayer.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:31 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/Validations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Validations.d" -MT"src/Validations.o" -o "src/Validations.o" "../src/Validations.c"
+../src/Validations.c: In function ‘validLongInt’:
+../src/Validations.c:90:20: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘long int *’ [-Wformat=]
+   isLong = scanf("%d", &aux);
+                   ~^   ~~~~
+                   %ld
+Finished building: ../src/Validations.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:32:40: error: expected ‘;’ before ‘setOption’
+  initializeTaxpayers(tpList, TP_AMOUNT)
+                                        ^
+                                        ;
+../src/parcial1_labo.c:36:2:
+  setOption('1', "Alta de contribuyente", mainMenu, 0);
+  ~~~~~~~~~                              
+../src/parcial1_labo.c:62:10: warning: implicit declaration of function ‘createTaxPayer’; did you mean ‘createTaxpayer’? [-Wimplicit-function-declaration]
+      if (createTaxPayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+          ^~~~~~~~~~~~~~
+          createTaxpayer
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:35 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:32:40: error: expected ‘;’ before ‘setOption’
+  initializeTaxpayers(tpList, TP_AMOUNT)
+                                        ^
+                                        ;
+../src/parcial1_labo.c:36:2:
+  setOption('1', "Alta de contribuyente", mainMenu, 0);
+  ~~~~~~~~~                              
+../src/parcial1_labo.c:62:10: warning: implicit declaration of function ‘createTaxPayer’; did you mean ‘createTaxpayer’? [-Wimplicit-function-declaration]
+      if (createTaxPayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+          ^~~~~~~~~~~~~~
+          createTaxpayer
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:41 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:32:40: error: expected ‘;’ before ‘setOption’
+  initializeTaxpayers(tpList, TP_AMOUNT)
+                                        ^
+                                        ;
+../src/parcial1_labo.c:36:2:
+  setOption('1', "Alta de contribuyente", mainMenu, 0);
+  ~~~~~~~~~                              
+../src/parcial1_labo.c:62:10: warning: implicit declaration of function ‘createTaxPayer’; did you mean ‘createTaxpayer’? [-Wimplicit-function-declaration]
+      if (createTaxPayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+          ^~~~~~~~~~~~~~
+          createTaxpayer
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:11:04 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:32:40: error: expected ‘;’ before ‘setOption’
+  initializeTaxpayers(tpList, TP_AMOUNT)
+                                        ^
+                                        ;
+../src/parcial1_labo.c:36:2:
+  setOption('1', "Alta de contribuyente", mainMenu, 0);
+  ~~~~~~~~~                              
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:11:15 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:32:40: error: expected ‘;’ before ‘setOption’
+  initializeTaxpayers(tpList, TP_AMOUNT)
+                                        ^
+                                        ;
+../src/parcial1_labo.c:36:2:
+  setOption('1', "Alta de contribuyente", mainMenu, 0);
+  ~~~~~~~~~                              
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:11:18 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:32: undefined reference to `initializeTaxpayers'
+/usr/bin/ld: /home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:62: undefined reference to `createTaxpayer'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:11:46 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:32: undefined reference to `initializeTaxpayers'
+/usr/bin/ld: /home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:62: undefined reference to `createTaxpayer'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:12:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:62: undefined reference to `createTaxpayer'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:12:05 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:62: undefined reference to `createTaxpayer'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:12:30 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:30:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:28:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c: In function ‘cleanBuffer’:
+../src/parcial1_labo.c:127:2: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:12:48 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:31:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:30:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:13:03 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:13:58 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:14:51 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Validations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Validations.d" -MT"src/Validations.o" -o "src/Validations.o" "../src/Validations.c"
+Finished building: ../src/Validations.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:14:59 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:15:15 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:16:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:31:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:30:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:16:45 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:37 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:18:49 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:20:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:31:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:30:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:22:30 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:31:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:30:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:29:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:31:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:26:28: warning: excess elements in scalar initializer
+  char valid_confirm = {'s','n'};
+                            ^~~
+../src/parcial1_labo.c:26:28: note: (near initialization for ‘valid_confirm’)
+../src/parcial1_labo.c:70:15: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+        printf("");
+               ^~
+../src/parcial1_labo.c:72:105: warning: passing argument 4 of ‘validChar’ makes pointer from integer without a cast [-Wint-conversion]
+        validChar("Carga exitosa. Desea cargar otro contribuyente? s/n", "Error. Opcion invalida", &opt, valid_confirm, 2, MAX_ATTEMPTS);
+                                                                                                         ^~~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:14:
+../src/Validations.h:23:9: note: expected ‘char *’ but argument is of type ‘char’
+   char *valid_values, int arrLength, int max_attempts);
+   ~~~~~~^~~~~~~~~~~~
+../src/parcial1_labo.c:118:16: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+        scanf("%c", opt);
+               ~^   ~~~
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:110: undefined reference to `indexTaxpayers'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:31:30 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:110: undefined reference to `indexTaxpayers'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:31:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:110: undefined reference to `indexTaxpayers'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:31:51 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:26:28: warning: excess elements in scalar initializer
+  char valid_confirm = {'s','n'};
+                            ^~~
+../src/parcial1_labo.c:26:28: note: (near initialization for ‘valid_confirm’)
+../src/parcial1_labo.c:70:15: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+        printf("");
+               ^~
+../src/parcial1_labo.c:72:105: warning: passing argument 4 of ‘validChar’ makes pointer from integer without a cast [-Wint-conversion]
+        validChar("Carga exitosa. Desea cargar otro contribuyente? s/n", "Error. Opcion invalida", &opt, valid_confirm, 2, MAX_ATTEMPTS);
+                                                                                                         ^~~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:14:
+../src/Validations.h:23:9: note: expected ‘char *’ but argument is of type ‘char’
+   char *valid_values, int arrLength, int max_attempts);
+   ~~~~~~^~~~~~~~~~~~
+../src/parcial1_labo.c:118:16: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+        scanf("%c", opt);
+               ~^   ~~~
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:32:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:70:15: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+        printf("");
+               ^~
+../src/parcial1_labo.c:118:16: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+        scanf("%c", opt);
+               ~^   ~~~
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:33:27 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:117:16: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+        scanf("%c", opt);
+               ~^   ~~~
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:33:53 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:33:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:35:36 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:18 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:24 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:37:57 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:38:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:39:49 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = {'s','n'};
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:39:52 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = {'s','n'};
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:41:12 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:19 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:09 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = {'s','n'};
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:43:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:20 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:44:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:44:37 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:46:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:46:16 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:47:06 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:32:7: warning: unused variable ‘auxSurname’ [-Wunused-variable]
+  char auxSurname[20];
+       ^~~~~~~~~~
+../src/parcial1_labo.c:31:7: warning: unused variable ‘auxName’ [-Wunused-variable]
+  char auxName[20];
+       ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:47:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:47:41 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:47:43 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
+20:50:58 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:137:15: error: expected identifier before ‘)’ token
+            && )
+               ^
+../src/parcial1_labo.c:137:15: error: expected statement before ‘)’ token
+../src/parcial1_labo.c:138:15: error: expected identifier before ‘)’ token
+            && )
+               ^
+../src/parcial1_labo.c:138:15: error: expected statement before ‘)’ token
+../src/parcial1_labo.c:151:12: error: ‘cuil’ undeclared (first use in this function)
+           &cuil, 20000000000, 40000000000,
+            ^~~~
+../src/parcial1_labo.c:151:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:07 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:148:12: error: ‘cuil’ undeclared (first use in this function)
+           &cuil, 20000000000, 40000000000,
+            ^~~~
+../src/parcial1_labo.c:148:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/parcial1_labo.c:33:6: warning: unused variable ‘auxCUIT’ [-Wunused-variable]
+  int auxCUIT;
+      ^~~~~~~
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:30 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:26:7: warning: unused variable ‘valid_confirm’ [-Wunused-variable]
+  char valid_confirm[2] = { 's', 'n' };
+       ^~~~~~~~~~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:51:39 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:52:33 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:149:10: warning: implicit declaration of function ‘clerConsole’; did you mean ‘clearConsole’? [-Wimplicit-function-declaration]
+          clerConsole();
+          ^~~~~~~~~~~
+          clearConsole
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:149: undefined reference to `clerConsole'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:43 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:53:15 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:54:52 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:154:15: warning: unknown escape sequence: '\D'
+        printf("\Desea modificar otro dato? (s/n): ");
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/parcial1_labo.c:156:19: error: expected expression before ‘%’ token
+        scanf("%c",%opt);
+                   ^
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:55:02 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:156:19: error: expected expression before ‘%’ token
+        scanf("%c",%opt);
+                   ^
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:55:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+20:55:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+make: Nothing to be done for 'all'.
