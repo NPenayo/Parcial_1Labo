@@ -5189,3 +5189,486 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"sr
 compilation terminated.
 make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+21:53:39 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:105:13: error: incompatible type for argument 1 of ‘showType’
+    showType(tyList);
+             ^~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:77:22: note: expected ‘IcType’ {aka ‘struct <anonymous>’} but argument is of type ‘IcType *’ {aka ‘struct <anonymous> *’}
+ void showType(IcType icType);
+               ~~~~~~~^~~~~~
+../src/Income.c:108:17: warning: passing argument 1 of ‘validType’ from incompatible pointer type [-Wincompatible-pointer-types]
+    if(validType(tpList, tpLens, MAX_ATTEMPTS, &id_type) && validFloat("Importe", "Error.Dato invalido", &amount, 1, 10000, MAX_ATTEMPTS)){
+                 ^~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:75:23: note: expected ‘IcType *’ {aka ‘struct <anonymous> *’} but argument is of type ‘TaxPayer *’ {aka ‘struct <anonymous> *’}
+ int validType(IcType *list, int lens, int max_attempts, int *output);
+               ~~~~~~~~^~~~
+../src/Income.c:109:12: warning: variable ‘newIncome’ set but not used [-Wunused-but-set-variable]
+     Income newIncome;
+            ^~~~~~~~~
+../src/Income.c:122:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:133:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:54:55 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:105:15: warning: passing argument 1 of ‘indexTypes’ from incompatible pointer type [-Wincompatible-pointer-types]
+    indexTypes(tpList, tpLens);
+               ^~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:76:25: note: expected ‘IcType *’ {aka ‘struct <anonymous> *’} but argument is of type ‘TaxPayer *’ {aka ‘struct <anonymous> *’}
+ void indexTypes(IcType *list, int lens);
+                 ~~~~~~~~^~~~
+../src/Income.c:108:17: warning: passing argument 1 of ‘validType’ from incompatible pointer type [-Wincompatible-pointer-types]
+    if(validType(tpList, tpLens, MAX_ATTEMPTS, &id_type) && validFloat("Importe", "Error.Dato invalido", &amount, 1, 10000, MAX_ATTEMPTS)){
+                 ^~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:75:23: note: expected ‘IcType *’ {aka ‘struct <anonymous> *’} but argument is of type ‘TaxPayer *’ {aka ‘struct <anonymous> *’}
+ int validType(IcType *list, int lens, int max_attempts, int *output);
+               ~~~~~~~~^~~~
+../src/Income.c:109:12: warning: variable ‘newIncome’ set but not used [-Wunused-but-set-variable]
+     Income newIncome;
+            ^~~~~~~~~
+../src/Income.c:96:11: warning: unused variable ‘cuil’ [-Wunused-variable]
+  long int cuil;
+           ^~~~
+../src/Income.c:94:7: warning: unused variable ‘name’ [-Wunused-variable]
+  char name;
+       ^~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:55:08 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:108:17: warning: passing argument 1 of ‘validType’ from incompatible pointer type [-Wincompatible-pointer-types]
+    if(validType(tpList, tpLens, MAX_ATTEMPTS, &id_type) && validFloat("Importe", "Error.Dato invalido", &amount, 1, 10000, MAX_ATTEMPTS)){
+                 ^~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:75:23: note: expected ‘IcType *’ {aka ‘struct <anonymous> *’} but argument is of type ‘TaxPayer *’ {aka ‘struct <anonymous> *’}
+ int validType(IcType *list, int lens, int max_attempts, int *output);
+               ~~~~~~~~^~~~
+../src/Income.c:109:12: warning: variable ‘newIncome’ set but not used [-Wunused-but-set-variable]
+     Income newIncome;
+            ^~~~~~~~~
+../src/Income.c:96:11: warning: unused variable ‘cuil’ [-Wunused-variable]
+  long int cuil;
+           ^~~~
+../src/Income.c:94:7: warning: unused variable ‘name’ [-Wunused-variable]
+  char name;
+       ^~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:55:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:109:12: warning: variable ‘newIncome’ set but not used [-Wunused-but-set-variable]
+     Income newIncome;
+            ^~~~~~~~~
+../src/Income.c:96:11: warning: unused variable ‘cuil’ [-Wunused-variable]
+  long int cuil;
+           ^~~~
+../src/Income.c:94:7: warning: unused variable ‘name’ [-Wunused-variable]
+  char name;
+       ^~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:56:08 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:96:11: warning: unused variable ‘cuil’ [-Wunused-variable]
+  long int cuil;
+           ^~~~
+../src/Income.c:94:7: warning: unused variable ‘name’ [-Wunused-variable]
+  char name;
+       ^~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:57:43 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:11 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:214:42: warning: passing argument 3 of ‘createIncome’ makes pointer from integer without a cast [-Wint-conversion]
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+                                          ^~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:51: note: expected ‘int *’ but argument is of type ‘int’
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+                                              ~~~~~^~
+../src/parcial1_labo.c:214:10: error: too few arguments to function ‘createIncome’
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+          ^~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:5: note: declared here
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+     ^~~~~~~~~~~~
+../src/parcial1_labo.c:39:9: warning: unused variable ‘types’ [-Wunused-variable]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+         ^~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:214:42: warning: passing argument 3 of ‘createIncome’ makes pointer from integer without a cast [-Wint-conversion]
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+                                          ^~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:51: note: expected ‘int *’ but argument is of type ‘int’
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+                                              ~~~~~^~
+../src/parcial1_labo.c:214:10: error: too few arguments to function ‘createIncome’
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+          ^~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:5: note: declared here
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+     ^~~~~~~~~~~~
+../src/parcial1_labo.c:39:9: warning: unused variable ‘types’ [-Wunused-variable]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+         ^~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:31 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:214:42: warning: passing argument 3 of ‘createIncome’ makes pointer from integer without a cast [-Wint-conversion]
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+                                          ^~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:51: note: expected ‘int *’ but argument is of type ‘int’
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+                                              ~~~~~^~
+../src/parcial1_labo.c:214:10: error: too few arguments to function ‘createIncome’
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+          ^~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:5: note: declared here
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+     ^~~~~~~~~~~~
+../src/parcial1_labo.c:39:9: warning: unused variable ‘types’ [-Wunused-variable]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+         ^~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:33 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:214:42: warning: passing argument 3 of ‘createIncome’ makes pointer from integer without a cast [-Wint-conversion]
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+                                          ^~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:51: note: expected ‘int *’ but argument is of type ‘int’
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+                                              ~~~~~^~
+../src/parcial1_labo.c:214:10: error: too few arguments to function ‘createIncome’
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+          ^~~~~~~~~~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:5: note: declared here
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+     ^~~~~~~~~~~~
+../src/parcial1_labo.c:39:9: warning: unused variable ‘types’ [-Wunused-variable]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+         ^~~~~
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:59:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:214:42: warning: passing argument 3 of ‘createIncome’ makes pointer from integer without a cast [-Wint-conversion]
+      if (createIncome(icList, IC_AMOUNT, icId, auxIndex, types, 3, tpList, TP_AMOUNT)) {
+                                          ^~~~
+In file included from ../src/parcial1_labo.c:17:
+../src/Income.h:73:51: note: expected ‘int *’ but argument is of type ‘int’
+ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
+                                              ~~~~~^~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:59:42 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:39:26: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                          ^~~~~~
+../src/parcial1_labo.c:39:26: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1095909953’ to ‘65’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }
+../src/parcial1_labo.c:39:41: warning: multi-character character constant [-Wmultichar]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                         ^~~~~~
+../src/parcial1_labo.c:39:41: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1229537858’ to ‘66’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }
+../src/parcial1_labo.c:39:56: warning: character constant too long for its type
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                                                        ^~~~~~~~~~~
+../src/parcial1_labo.c:39:56: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘1128874323’ to ‘83’ [-Woverflow]
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+../src/parcial1_labo.c:39:20: warning: missing braces around initializer [-Wmissing-braces]
+  IcType types[3] = {{'1','ARBA',0},{'2','IIBB',0},{'3','GANANCIAS',0}};
+                    ^
+                          {       }      {       }      {            }
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 

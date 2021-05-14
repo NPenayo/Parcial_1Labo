@@ -91,7 +91,9 @@ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
 	int month;
 	int id_type;
 	float amount;
+	char name;
 	char surname[STR_LEN];
+	long int cuil;
 	initializeChar(surname, STR_LEN);
 	printf("\n*************** Alta Contribuyentes *********");
 	indexTaxpayers(tpList, tpLens);

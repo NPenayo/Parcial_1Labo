@@ -91,33 +91,40 @@ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
 	int month;
 	int id_type;
 	float amount;
+	char name;
 	char surname[STR_LEN];
+	long int cuil;
 	initializeChar(surname, STR_LEN);
 	printf("\n*************** Alta Contribuyentes *********");
 	indexTaxpayers(tpList, tpLens);
 	printf("\nEscriba ID de contribuyente: ");
 	__fpurge(stdin);
-	scanf("%d", &id_taxPayer);
-	if (getTaxPayerById(tpList, tpLens, id_taxPayer, &id_taxPayer)) {
-		if (validInt("Mes", "Error.Mes invalido", &month, 1, 12,
-				MAX_ATTEMPTS)) {
-			indexTypes(tyList, tpLens);
-			printf("\nCodigo de tipo: ");
-			scanf("%d", &id_type);
-			if (validType(tyList, tyLens, MAX_ATTEMPTS, &id_type)
-					&& validFloat("Importe", "Error.Dato invalido", &amount, 1,
-							10000, MAX_ATTEMPTS)) {
-				Income newIncome;
-				newIncome.id = *id;
-				*id += 1;
-				newIncome.month = month;
-				newIncome.id_type = id_type;
-				newIncome.id_taxPayer = id_taxPayer;
-				newIncome.amount = amount;
-				icList[index] = newIncome;
-				resp = 1;
-			}
-		}
+	scanf("%d",&id_taxPayer);
+	if(getTaxPayerById(tpList, tpLens, id_taxPayer, &id_taxPayer)){
+
+	}else{
+		resp=0;
+	}
+
+	validInt("Mes", "Error.Mes invalido", &month, 1, 12, MAX_ATTEMPTS);
+
+	if (validString("Mes", "Error.Mes invalido", name, 20,
+	MAX_ATTEMPTS)
+			&& validString("Apellido",
+					"Error.El apellido no puede estar vacio o contener numeros",
+					surname, 20, MAX_ATTEMPTS)
+			&& validLongInt("CUIL(sin - )",
+					"Error.Tipo de dato ingresado invalido", &cuil, 20000000000,
+					40000000000, MAX_ATTEMPTS)) {
+		TaxPayer newTaxPayer;
+		newTaxPayer.id = *id;
+		*id += 1;
+		strcpy(newTaxPayer.name, name);
+		strcpy(newTaxPayer.surname, surname);
+		newTaxPayer.cuil = cuil;
+		newTaxPayer.assigned = 1;
+		tpList[index] = newTaxPayer;
+		resp = 1;
 	}
 
 	return resp;
@@ -172,7 +179,7 @@ int validType(IcType *list, int lens, int max_attempts, int *output) {
 	}
 	return resp;
 }
-void indexTypes(IcType *list, int lens) {
+void indexTypes(IcType *list, int lens){
 	printf("\n************ Recaudaciones disponibles ************");
 	printf("\n\n%-15s | %6s", "Codigo_Recaudacion", "Descripcion");
 	printf("\n-----------------------------");
@@ -181,6 +188,6 @@ void indexTypes(IcType *list, int lens) {
 	}
 }
 void showType(IcType icType) {
-	printf("\n %6d%10s %-20s", icType.id, "", icType.description);
+	printf("\n %6d%10s %-20s", icType.id,"",icType.description);
 }
 

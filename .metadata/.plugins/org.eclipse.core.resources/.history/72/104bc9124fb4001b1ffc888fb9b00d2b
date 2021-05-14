@@ -91,7 +91,9 @@ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
 	int month;
 	int id_type;
 	float amount;
+	char name;
 	char surname[STR_LEN];
+	long int cuil;
 	initializeChar(surname, STR_LEN);
 	printf("\n*************** Alta Contribuyentes *********");
 	indexTaxpayers(tpList, tpLens);
@@ -99,26 +101,22 @@ int createIncome(Income *icList, int icLens, int *id, int index, IcType *tyList,
 	__fpurge(stdin);
 	scanf("%d", &id_taxPayer);
 	if (getTaxPayerById(tpList, tpLens, id_taxPayer, &id_taxPayer)) {
-		if (validInt("Mes", "Error.Mes invalido", &month, 1, 12,
-				MAX_ATTEMPTS)) {
+		if(validInt("Mes", "Error.Mes invalido", &month, 1, 12, MAX_ATTEMPTS)){
 			indexTypes(tyList, tpLens);
 			printf("\nCodigo de tipo: ");
-			scanf("%d", &id_type);
-			if (validType(tyList, tyLens, MAX_ATTEMPTS, &id_type)
-					&& validFloat("Importe", "Error.Dato invalido", &amount, 1,
-							10000, MAX_ATTEMPTS)) {
+			scanf("%d",&id_type);
+			if(validType(tyList, tpLens, MAX_ATTEMPTS, &id_type) && validFloat("Importe", "Error.Dato invalido", &amount, 1, 10000, MAX_ATTEMPTS)){
 				Income newIncome;
 				newIncome.id = *id;
-				*id += 1;
+				*id+=1;
 				newIncome.month = month;
 				newIncome.id_type = id_type;
 				newIncome.id_taxPayer = id_taxPayer;
 				newIncome.amount = amount;
-				icList[index] = newIncome;
-				resp = 1;
 			}
 		}
 	}
+
 
 	return resp;
 }

@@ -11,7 +11,7 @@
 typedef struct {
 	int id;
 	char description[STR_LEN];
-} IcType;
+}IcType;
 typedef struct {
 	int id;
 	int id_taxPayer;

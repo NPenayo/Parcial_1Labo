@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
-#include <string.h>
+#include <string>
 #include "Arrays.h"
 #include "Menu.h"
 #include "Validations.h"
@@ -211,7 +211,7 @@ int main(void) {
 				break;
 			case '4':
 				if (!(isEmpty(tpList, TP_AMOUNT))) {
-					if (createIncome(icList, IC_AMOUNT, &icId, auxIndex, types, 3, tpList, TP_AMOUNT)) {
+					if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
 						printf(
 								"\n\nCarga exitosa. Desea cargar otra recaudacion?(s/n) ");
 						cleanBuffer();
