@@ -10,6 +10,7 @@
 #define TAXPAYER_H_
 //#include "Income.h"
 #define STR_LEN 20
+#define MAX_ATTEMPTS 3
 typedef struct {
 	int id;
 	char name[STR_LEN];
@@ -40,7 +41,7 @@ int getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find,  int *output);
 //Inicializar tpListay de alumnos
 void initializeTaxpayers(TaxPayer *taxpayers, int tpLens);
 //Obtener posicion libre en tpListay de alumnos
-int getUnassigned(TaxPayer *tpList, int tpLens, int *to_assign);
+int getTpUnassigned(TaxPayer *tpList, int tpLens, int *to_assign);
 //Verificar si hay registros cargados
 int isEmpty(TaxPayer *tpList, int tpLens);
 

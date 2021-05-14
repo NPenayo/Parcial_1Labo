@@ -3527,3 +3527,1665 @@ Finished building target: parcial1_labo
 20:55:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
 make all 
 make: Nothing to be done for 'all'.
+21:06:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:137:11: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:137:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/parcial1_labo.c:137:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:16:1:
++#include <string.h>
+ #define MAIN_OPT 9
+../src/parcial1_labo.c:137:11:
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:152:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+           strcpy(tpList[auxIndex].surname,
+           ^~~~~~
+../src/parcial1_labo.c:152:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:34:11: warning: unused variable ‘auxTP’ [-Wunused-variable]
+  TaxPayer auxTP;
+           ^~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:08:45 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:72:20: error: unknown type name ‘TaxPayer’
+ int createTaxpayer(TaxPayer *tpList, int tpLens,int* id, int index);
+                    ^~~~~~~~
+../src/Income.c: In function ‘indexincomes’:
+../src/Income.c:43:3: warning: implicit declaration of function ‘showincome’; did you mean ‘showIncome’? [-Wimplicit-function-declaration]
+   showincome(incomes[i]);
+   ^~~~~~~~~~
+   showIncome
+../src/Income.c: At top level:
+../src/Income.c:48:6: warning: conflicting types for ‘showincome’
+ void showincome(Income income) {
+      ^~~~~~~~~~
+../src/Income.c:43:3: note: previous implicit declaration of ‘showincome’ was here
+   showincome(incomes[i]);
+   ^~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:10:06 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘validIncome’:
+../src/Income.c:59:3: warning: implicit declaration of function ‘indexincomes’; did you mean ‘indexIncomes’? [-Wimplicit-function-declaration]
+   indexincomes(incomes, arrLength);
+   ^~~~~~~~~~~~
+   indexIncomes
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Income.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/Income.o: in function `validIncome':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/Income.c:59: undefined reference to `indexincomes'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:10:29 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘validIncome’:
+../src/Income.c:59:3: warning: implicit declaration of function ‘indexincomes’; did you mean ‘indexIncomes’? [-Wimplicit-function-declaration]
+   indexincomes(incomes, arrLength);
+   ^~~~~~~~~~~~
+   indexIncomes
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Income.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/Income.o: in function `validIncome':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/Income.c:59: undefined reference to `indexincomes'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:10:39 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Income.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:14:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:96:3: warning: implicit declaration of function ‘initializeChar’; did you mean ‘initializeTaxpayers’? [-Wimplicit-function-declaration]
+   initializeChar(month, STR_LEN);
+   ^~~~~~~~~~~~~~
+   initializeTaxpayers
+../src/Income.c:99:7: warning: implicit declaration of function ‘validString’ [-Wimplicit-function-declaration]
+   if (validString("Nombre",
+       ^~~~~~~~~~~
+../src/Income.c:101:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:101:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:105:8: warning: implicit declaration of function ‘validLongInt’; did you mean ‘validIncome’? [-Wimplicit-function-declaration]
+     && validLongInt("CUIL(sin - )", "Error.Tipo de dato ingresado invalido",
+        ^~~~~~~~~~~~
+        validIncome
+../src/Income.c:111:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:10:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:115:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:92:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:91:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:88:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:14:23 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:100:7: warning: implicit declaration of function ‘validString’; did you mean ‘swapString’? [-Wimplicit-function-declaration]
+   if (validString("Nombre",
+       ^~~~~~~~~~~
+       swapString
+../src/Income.c:102:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:102:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:106:8: warning: implicit declaration of function ‘validLongInt’; did you mean ‘validIncome’? [-Wimplicit-function-declaration]
+     && validLongInt("CUIL(sin - )", "Error.Tipo de dato ingresado invalido",
+        ^~~~~~~~~~~~
+        validIncome
+../src/Income.c:112:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:11:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:93:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:92:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:91:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:89:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:14:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:01 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:04 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:09 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:12:19: error: ‘STR_LEN’ undeclared here (not in a function)
+  char description[STR_LEN];
+                   ^~~~~~~
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:15 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:10: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:29 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:9: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:31 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:9: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:33 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:7: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:35 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:8:
+../src/Income.h:14:19: error: ‘STR_LEN’ undeclared here (not in a function)
+  char description[STR_LEN];
+                   ^~~~~~~
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:46 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+In file included from ../src/Income.c:9:
+../src/Taxpayer.h:12: warning: "STR_LEN" redefined
+ #define STR_LEN 20
+ 
+In file included from ../src/Income.c:8:
+../src/Income.h:11: note: this is the location of the previous definition
+ #define STR_LEN 15
+ 
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:16:14 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:103:5: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+     MAX_ATTEMPTS)
+     ^~~~~~~~~~~~
+../src/Income.c:103:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:102:64: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+     "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                                ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(newTaxPayer.name, name);
+                             ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:4: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+    tpList[index] = newTaxPayer;
+    ^~~~~~
+    icList
+../src/Income.c:94:7: warning: unused variable ‘assigned’ [-Wunused-variable]
+   int assigned;
+       ^~~~~~~~
+../src/Income.c:93:9: warning: unused variable ‘amount’ [-Wunused-variable]
+   float amount;
+         ^~~~~~
+../src/Income.c:92:7: warning: unused variable ‘id_type’ [-Wunused-variable]
+   int id_type;
+       ^~~~~~~
+../src/Income.c:90:7: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+   int id_taxPayer;
+       ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:16:22 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:102:4: error: ‘MAX_ATTEMPTS’ undeclared (first use in this function)
+    MAX_ATTEMPTS)
+    ^~~~~~~~~~~~
+../src/Income.c:102:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:101:63: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+    "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:112:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   icList
+../src/Income.c:93:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Income.c:92:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:91:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:89:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:16:55 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:101:63: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+    "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:112:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   icList
+../src/Income.c:116:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Income.c:92:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:91:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:89:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:17:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:101:63: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+    "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:112:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   icList
+../src/Income.c:116:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:6: warning: unused variable ‘assigned’ [-Wunused-variable]
+  int assigned;
+      ^~~~~~~~
+../src/Income.c:92:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:91:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:89:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:18:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:100:63: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+    "Error.El nombre no puede estar vacio o contener numeros", name, 20,
+                                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:111:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:115:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   icList
+../src/Income.c:115:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:92:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:91:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:89:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:20:51 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘initializeIncomes’:
+../src/Income.c:123:9: error: subscripted value is neither array nor pointer nor vector
+   icList[i].assigned = 0;
+         ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:20:59 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c:121:6: error: conflicting types for ‘initializeIncomes’
+ void initializeIncomes(Income icList, int tsLens) {
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:72:6: note: previous declaration of ‘initializeIncomes’ was here
+ void initializeIncomes(Income *icList, int tsLens);
+      ^~~~~~~~~~~~~~~~~
+../src/Income.c: In function ‘initializeIncomes’:
+../src/Income.c:123:9: error: subscripted value is neither array nor pointer nor vector
+   icList[i].assigned = 0;
+         ^
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:21:13 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:141:11: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:141:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/parcial1_labo.c:141:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:17:1:
++#include <string.h>
+ #define MAIN_OPT 9
+../src/parcial1_labo.c:141:11:
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:156:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+           strcpy(tpList[auxIndex].surname,
+           ^~~~~~
+../src/parcial1_labo.c:156:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:36:11: warning: unused variable ‘auxTP’ [-Wunused-variable]
+  TaxPayer auxTP;
+           ^~~~~
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:23:17 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+Finished building: ../src/Income.c
+ 
+Building file: ../src/Taxpayer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Taxpayer.d" -MT"src/Taxpayer.o" -o "src/Taxpayer.o" "../src/Taxpayer.c"
+Finished building: ../src/Taxpayer.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:67:9: warning: implicit declaration of function ‘getUnassigned’; did you mean ‘getIcUnassigned’? [-Wimplicit-function-declaration]
+     if (getUnassigned(tpList, TP_AMOUNT, &auxIndex)) {
+         ^~~~~~~~~~~~~
+         getIcUnassigned
+../src/parcial1_labo.c:140:11: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:140:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/parcial1_labo.c:140:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:17:1:
++#include <string.h>
+ #define MAIN_OPT 9
+../src/parcial1_labo.c:140:11:
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:155:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+           strcpy(tpList[auxIndex].surname,
+           ^~~~~~
+../src/parcial1_labo.c:155:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+/usr/bin/ld: ./src/parcial1_labo.o: in function `main':
+/home/npenayo/Facultad/programacion_1/parcial/parcial1_labo/Debug/../src/parcial1_labo.c:67: undefined reference to `getUnassigned'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: parcial1_labo] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:23:28 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:140:11: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:140:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/parcial1_labo.c:140:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:17:1:
++#include <string.h>
+ #define MAIN_OPT 9
+../src/parcial1_labo.c:140:11:
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:155:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+           strcpy(tpList[auxIndex].surname,
+           ^~~~~~
+../src/parcial1_labo.c:155:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:24:29 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c: In function ‘main’:
+../src/parcial1_labo.c:140:11: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:140:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/parcial1_labo.c:140:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/parcial1_labo.c:17:1:
++#include <string.h>
+ #define MAIN_OPT 9
+../src/parcial1_labo.c:140:11:
+           strcpy(tpList[auxIndex].name, auxName);
+           ^~~~~~
+../src/parcial1_labo.c:155:11: warning: incompatible implicit declaration of built-in function ‘strcpy’
+           strcpy(tpList[auxIndex].surname,
+           ^~~~~~
+../src/parcial1_labo.c:155:11: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+Finished building: ../src/parcial1_labo.c
+ 
+Building target: parcial1_labo
+Invoking: GCC C Linker
+gcc  -o "parcial1_labo"  ./src/Arrays.o ./src/Income.o ./src/Menu.o ./src/Taxpayer.o ./src/Validations.o ./src/parcial1_labo.o   
+Finished building target: parcial1_labo
+ 
+21:28:25 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:33:50 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:96:17: warning: passing argument 1 of ‘initializeChar’ makes pointer from integer without a cast [-Wint-conversion]
+  initializeChar(month, STR_LEN);
+                 ^~~~~
+In file included from ../src/Income.c:10:
+../src/Arrays.h:53:21: note: expected ‘char *’ but argument is of type ‘int’
+ void initializeChar(char[],int arrLength);
+                     ^~~~~~
+../src/Income.c:99:40: warning: passing argument 3 of ‘validInt’ makes pointer from integer without a cast [-Wint-conversion]
+  validInt("Mes", "Error.Mes invalido", month, 1, 12, MAX_ATTEMPTS);
+                                        ^~~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘int’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Income.c:101:26: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+    "Error.Mes invalido", name, 20,
+                          ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:112:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘icList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   icList
+../src/Income.c:116:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:138:2: error: expected declaration or statement at end of input
+  }
+  ^
+../src/Income.c:92:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:91:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:89:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+At top level:
+../src/Income.c:128:6: warning: ‘getIcUnassigned’ defined but not used [-Wunused-function]
+  int getIcUnassigned(Income *icList, int icLens, int *to_assign) {
+      ^~~~~~~~~~~~~~~
+../src/Income.c:122:7: warning: ‘initializeIncomes’ defined but not used [-Wunused-function]
+  void initializeIncomes(Income *icList, int tsLens) {
+       ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:37:35 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:97:17: warning: passing argument 1 of ‘initializeChar’ makes pointer from integer without a cast [-Wint-conversion]
+  initializeChar(month, STR_LEN);
+                 ^~~~~
+In file included from ../src/Income.c:10:
+../src/Arrays.h:53:21: note: expected ‘char *’ but argument is of type ‘int’
+ void initializeChar(char[],int arrLength);
+                     ^~~~~~
+../src/Income.c:100:40: warning: passing argument 3 of ‘validInt’ makes pointer from integer without a cast [-Wint-conversion]
+  validInt("Mes", "Error.Mes invalido", month, 1, 12, MAX_ATTEMPTS);
+                                        ^~~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘int’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Income.c:102:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+../src/Income.c: At top level:
+../src/Income.c:140:5: error: conflicting types for ‘validType’
+ int validType(IcType *list, int lens, int max_attempts, int *output) {
+     ^~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:75:5: note: previous declaration of ‘validType’ was here
+ int validType(IcType *list, int lens, int max_attempts);
+     ^~~~~~~~~
+../src/Income.c: In function ‘validType’:
+../src/Income.c:147:3: error: too few arguments to function ‘indexTypes’
+   indexTypes(list, lens);
+   ^~~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:76:6: note: declared here
+ void indexTypes(IcType *list, int lens,int *output);
+      ^~~~~~~~~~
+../src/Income.c: At top level:
+../src/Income.c:173:6: error: conflicting types for ‘indexTypes’
+ void indexTypes(IcType *list, int lens){
+      ^~~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:76:6: note: previous declaration of ‘indexTypes’ was here
+ void indexTypes(IcType *list, int lens,int *output);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:37:46 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:97:17: warning: passing argument 1 of ‘initializeChar’ makes pointer from integer without a cast [-Wint-conversion]
+  initializeChar(month, STR_LEN);
+                 ^~~~~
+In file included from ../src/Income.c:10:
+../src/Arrays.h:53:21: note: expected ‘char *’ but argument is of type ‘int’
+ void initializeChar(char[],int arrLength);
+                     ^~~~~~
+../src/Income.c:100:40: warning: passing argument 3 of ‘validInt’ makes pointer from integer without a cast [-Wint-conversion]
+  validInt("Mes", "Error.Mes invalido", month, 1, 12, MAX_ATTEMPTS);
+                                        ^~~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘int’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Income.c:102:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+../src/Income.c: At top level:
+../src/Income.c:140:5: error: conflicting types for ‘validType’
+ int validType(IcType *list, int lens, int max_attempts, int *output) {
+     ^~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:75:5: note: previous declaration of ‘validType’ was here
+ int validType(IcType *list, int lens, int max_attempts);
+     ^~~~~~~~~
+../src/Income.c: In function ‘validType’:
+../src/Income.c:147:3: error: too few arguments to function ‘indexTypes’
+   indexTypes(list, lens);
+   ^~~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:76:6: note: declared here
+ void indexTypes(IcType *list, int lens,int *output);
+      ^~~~~~~~~~
+../src/Income.c: At top level:
+../src/Income.c:173:6: error: conflicting types for ‘indexTypes’
+ void indexTypes(IcType *list, int lens){
+      ^~~~~~~~~~
+In file included from ../src/Income.c:8:
+../src/Income.h:76:6: note: previous declaration of ‘indexTypes’ was here
+ void indexTypes(IcType *list, int lens,int *output);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:38:10 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:97:17: warning: passing argument 1 of ‘initializeChar’ makes pointer from integer without a cast [-Wint-conversion]
+  initializeChar(month, STR_LEN);
+                 ^~~~~
+In file included from ../src/Income.c:10:
+../src/Arrays.h:53:21: note: expected ‘char *’ but argument is of type ‘int’
+ void initializeChar(char[],int arrLength);
+                     ^~~~~~
+../src/Income.c:100:40: warning: passing argument 3 of ‘validInt’ makes pointer from integer without a cast [-Wint-conversion]
+  validInt("Mes", "Error.Mes invalido", month, 1, 12, MAX_ATTEMPTS);
+                                        ^~~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘int’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Income.c:102:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:40:51 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:97:17: warning: passing argument 1 of ‘initializeChar’ makes pointer from integer without a cast [-Wint-conversion]
+  initializeChar(month, STR_LEN);
+                 ^~~~~
+In file included from ../src/Income.c:10:
+../src/Arrays.h:53:21: note: expected ‘char *’ but argument is of type ‘int’
+ void initializeChar(char[],int arrLength);
+                     ^~~~~~
+../src/Income.c:100:40: warning: passing argument 3 of ‘validInt’ makes pointer from integer without a cast [-Wint-conversion]
+  validInt("Mes", "Error.Mes invalido", month, 1, 12, MAX_ATTEMPTS);
+                                        ^~~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:36:53: note: expected ‘int *’ but argument is of type ‘int’
+ int validInt(char* requestMsg, char* errorMsg, int *output, int min_value,
+                                                ~~~~~^~~~~~
+../src/Income.c:102:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:41:27 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:101:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:112:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:116:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:116:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:42:47 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:99:18: error: expected expression before ‘TaxPayer’
+  getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find,  int *output)
+                  ^~~~~~~~
+../src/Income.c:99:2: error: too few arguments to function ‘getTaxPayerById’
+  getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find,  int *output)
+  ^~~~~~~~~~~~~~~
+In file included from ../src/Income.h:10,
+                 from ../src/Income.c:8:
+../src/Taxpayer.h:40:5: note: declared here
+ int getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find,  int *output);
+     ^~~~~~~~~~~~~~~
+../src/Income.c:99:74: error: expected ‘;’ before ‘validInt’
+  getTaxPayerById(TaxPayer *tpList, int tpLens, int to_find,  int *output)
+                                                                          ^
+                                                                          ;
+  validInt("Mes", "Error.Mes invalido", &month, 1, 12, MAX_ATTEMPTS);
+  ~~~~~~~~                                                                 
+../src/Income.c:102:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:113:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:117:3: error: ‘tpList’ undeclared (first use in this function); did you mean ‘tyList’?
+   tpList[index] = newTaxPayer;
+   ^~~~~~
+   tyList
+../src/Income.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:91:6: warning: unused variable ‘month’ [-Wunused-variable]
+  int month;
+      ^~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:00 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:100:34: error: ‘to_find’ undeclared (first use in this function)
+  getTaxPayerById(tpList, tpLens, to_find, output);
+                                  ^~~~~~~
+../src/Income.c:100:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:100:43: error: ‘output’ undeclared (first use in this function)
+  getTaxPayerById(tpList, tpLens, to_find, output);
+                                           ^~~~~~
+../src/Income.c:103:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:114:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:90:6: warning: unused variable ‘id_taxPayer’ [-Wunused-variable]
+  int id_taxPayer;
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:19 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:100:34: error: ‘to_find’ undeclared (first use in this function)
+  getTaxPayerById(tpList, tpLens, to_find, &id_taxPayer);
+                                  ^~~~~~~
+../src/Income.c:100:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/Income.c:103:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:114:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+make: *** [src/subdir.mk:35: src/Income.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:34 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:102:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+  scanf("%d",id_taxPayer);
+         ~^  ~~~~~~~~~~~
+../src/Income.c:106:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:117:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:106:6: warning: ‘name’ is used uninitialized in this function [-Wuninitialized]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  MAX_ATTEMPTS)
+  ~~~~~~~~~~~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:49 **** Incremental Build of configuration Debug for project parcial1_labo ****
+make all 
+Building file: ../src/Income.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Income.d" -MT"src/Income.o" -o "src/Income.o" "../src/Income.c"
+../src/Income.c: In function ‘createIncome’:
+../src/Income.c:106:47: warning: passing argument 3 of ‘validString’ makes pointer from integer without a cast [-Wint-conversion]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+                                               ^~~~
+In file included from ../src/Income.c:11:
+../src/Validations.h:64:56: note: expected ‘char *’ but argument is of type ‘char’
+ int validString(char *message, char *errMessage, char *output, int strLenght, int max_attempts);
+                                                  ~~~~~~^~~~~~
+../src/Income.c:117:28: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(newTaxPayer.name, name);
+                            ^~~~
+In file included from ../src/Income.c:12:
+/usr/include/string.h:121:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Income.c:93:8: warning: unused variable ‘amount’ [-Wunused-variable]
+  float amount;
+        ^~~~~~
+../src/Income.c:92:6: warning: unused variable ‘id_type’ [-Wunused-variable]
+  int id_type;
+      ^~~~~~~
+../src/Income.c:106:6: warning: ‘name’ is used uninitialized in this function [-Wuninitialized]
+  if (validString("Mes", "Error.Mes invalido", name, 20,
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  MAX_ATTEMPTS)
+  ~~~~~~~~~~~~~
+Finished building: ../src/Income.c
+ 
+Building file: ../src/parcial1_labo.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parcial1_labo.d" -MT"src/parcial1_labo.o" -o "src/parcial1_labo.o" "../src/parcial1_labo.c"
+../src/parcial1_labo.c:12:10: fatal error: string: No such file or directory
+ #include <string>
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:35: src/parcial1_labo.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

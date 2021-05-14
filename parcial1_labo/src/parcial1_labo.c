@@ -9,19 +9,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include <string>
 #include "Arrays.h"
 #include "Menu.h"
 #include "Validations.h"
 #include "Taxpayer.h"
+#include "Income.h"
 #define MAIN_OPT 9
 #define UPD_OPT 4
 #define MAX_ATTEMPTS 3
 #define TP_AMOUNT 3
+#define IC_AMOUNT 3
 void clearConsole();
 void cleanBuffer();
 int main(void) {
 	//Set variables
-	int id = 1000;
+	int tpId = 1000;
+	int icId = 100;
 	char opt;
 	Option mainMenu[MAIN_OPT];
 	Option updMenut[UPD_OPT];
@@ -31,8 +35,9 @@ int main(void) {
 	char auxSurname[20];
 	long int auxCUIL;
 	TaxPayer tpList[TP_AMOUNT];
-	TaxPayer auxTP;
+	Income icList[IC_AMOUNT];
 	initializeTaxpayers(tpList, TP_AMOUNT);
+	initializeIncomes(icList, IC_AMOUNT);
 	//Set options
 
 	//Main Menu
@@ -61,10 +66,10 @@ int main(void) {
 			clearConsole();
 			switch (opt) {
 			case '1':
-				if (getUnassigned(tpList, TP_AMOUNT, &auxIndex)) {
+				if (getTpUnassigned(tpList, TP_AMOUNT, &auxIndex)) {
 					do {
 						if (!(opt == 'n')
-								&& createTaxpayer(tpList, TP_AMOUNT, &id,
+								&& createTaxpayer(tpList, TP_AMOUNT, &tpId,
 										auxIndex)) {
 
 							printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
@@ -87,7 +92,7 @@ int main(void) {
 						}
 
 					} while (!(opt == 'n'));
-					if (createTaxpayer(tpList, TP_AMOUNT, &id, auxIndex)) {
+					if (createTaxpayer(tpList, TP_AMOUNT, &tpId, auxIndex)) {
 
 						printf("\n\n | %6s | %10s | %4s | %4s |", "ID",
 								"Nombre", "Apellido", "CUIL");
@@ -119,7 +124,7 @@ int main(void) {
 						indexTaxpayers(tpList, TP_AMOUNT);
 						if (validInt("Ingrese el ID",
 								"ID incorrecto. Intente nuevamente", &auxId,
-								1000, id, MAX_ATTEMPTS)) {
+								1000, tpId, MAX_ATTEMPTS)) {
 							clearConsole();
 							printMenu(updMenut, UPD_OPT);
 							printf("\nElija una opcion: ");
@@ -186,11 +191,31 @@ int main(void) {
 				}
 				break;
 			case '3':
+				if (!(isEmpty(tpList, TP_AMOUNT))) {
+					if (getIcUnassigned(icList, IC_AMOUNT, &auxId)) {
+						do {
 
+						} while (!(opt == 'n'));
+					}
+					clearConsole();
+					printf(
+							"\nError.La base de recaudaciones esta llena. Debe borrar un registro.");
+					printf("\nPresione una tecla para volver al menu");
+					cleanBuffer();
+					getchar();
+				} else {
+					clearConsole();
+					printf("\nNo hay contribuyentes cargados para mostrar.");
+				}
 				break;
 			case '4':
 				if (!(isEmpty(tpList, TP_AMOUNT))) {
-
+					if (createIncome(icList, IC_AMOUNT, icId, auxIndex)) {
+						printf(
+								"\n\nCarga exitosa. Desea cargar otra recaudacion?(s/n) ");
+						cleanBuffer();
+						scanf("%c", &opt);
+					}
 				} else {
 					clearConsole();
 					printf(

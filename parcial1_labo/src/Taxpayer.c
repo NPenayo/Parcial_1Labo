@@ -106,7 +106,7 @@ void initializeTaxpayers(TaxPayer *tpList, int tpLens) {
 	}
 
 }
-int getUnassigned(TaxPayer *tpList, int tpLens, int *to_assign) {
+int getTpUnassigned(TaxPayer *tpList, int tpLens, int *to_assign) {
 	int resp = 0;
 	for (int i = 0; i < tpLens; i++) {
 		if (!(tpList[i].assigned)) {
